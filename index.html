@@ -6,7 +6,30 @@
   <title>Drinks</title>
 </head>
 <body>
-  <div>
+    <form>
+        <label for="age">Are you old enough to vote? Enter Your Age</label>
+        <input id="age" type="number">
+        <button type="submit">Submit</button>
+    </form>
+    <div id="voterReg" class="hidden">
+        <h1>Voter Registration Links</h1>
+        <ul>
+            <li>
+                <a href="https://sos.oregon.gov/voting/Pages/registration.aspx?lang=en" target="_blank">
+                    Secretary of State Website</a>
+            </li>
+        </ul>
+    </div>
+  
+    <div id="minorInfo" class="hidden">
+        <h1>Underage info</h1>
+        <p>
+            You are not old enough to vote!
+        </p>
+    </div>
+
+
+  <!-- <div>
     <form>
       <label for="age">We need to verify that you are over 21 years of age before we can show you the drinks menu. What is your age?</label>
       <input id="age" type="number">
@@ -30,13 +53,13 @@
         <li>White wine</li>
         <li>Blue wine</li>
       </ul>
-    </div>
+    </div> 
 
     <div id="under-21" class="hidden">
       <h1>Sorry, we can't serve you.</h1>
 
       <p>It's illegal in the US. Try Mexico or Europe.</p>
     </div>
-  </div>
+  </div> -->
 </body>
 </html>

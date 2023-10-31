@@ -1,4 +1,26 @@
 window.onload = function() {
+    const form = document.querySelector("form");
+    
+    
+    form.onsubmit = function(event) {
+        event.preventDefault();
+        let voterReg = document.getElementById("voterReg");
+        voterReg.setAttribute("class","hidden");
+        let minorInfo = document.getElementById("minorInfo");
+        minorInfo.setAttribute("class","hidden");
+
+        const age = parseInt(document.querySelector("input#age").value);
+
+        if (age >=18) {
+            voterReg.removeAttribute("class");
+        }
+        else {
+            minorInfo.removeAttribute("class");
+        }
+    }
+
+
+    /*
     // we get the form element
     const form = document.querySelector("form");
     // we create an event handler for the form's submission
@@ -22,5 +44,5 @@ window.onload = function() {
       if (age >= 21) {
         drinkMenu.removeAttribute("class");
       } 
-    };
+    }; */
   };
